@@ -25,4 +25,9 @@ public class CreadorNotificator {
         notificator = new Facebook(this.notificator);
         return this;
     }
+
+    public CreadorNotificator enviarPorEmail(){
+        notificator = new Email(this.notificator);
+        return this;
+    }
 }

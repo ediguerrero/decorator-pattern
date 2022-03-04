@@ -9,8 +9,5 @@ public abstract class NotificatorDecorator implements Notificator {
         this.notificator = notificator;
     }
 
-    public void enviar(String message, List<String> accounts) {
-        notificator.enviar(message, accounts);
-
-    }
+    public abstract void enviar(String message, List<String> accounts) ;
 }

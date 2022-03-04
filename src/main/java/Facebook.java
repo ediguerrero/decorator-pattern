@@ -5,6 +5,7 @@ public class Facebook extends NotificatorDecorator{
 
     Facebook(Notificator notificator) {
         super(notificator);
+        System.out.println("enviando por Facebook");
 
     }
 
